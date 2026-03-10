@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculadora de Notas</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Calculadora de Notas</h1>
+
+        <button onclick="modoTema()" class="tema">Alternar tema</button>
+
+        <div class="notas-container">
+
+            <div class="nota-input">
+                <h4>1º Nota</h4>
+                <input type="number" id="nota1" min="0" max="10" step="0.1" placeholder="0.0">
+                <div class="peso">Peso: 3</div>
+            </div>
+
+            <div class="nota-input">
+                <h4>2º Nota</h4>
+                <input type="number" id="nota2" min="0" max="10" step="0.1" placeholder="0.0">
+                <div class="peso">Peso: 3</div>
+            </div>
+
+            <div class="nota-input">
+                <h4>3º Nota</h4>
+                <input type="number" id="nota3" min="0" max="10" step="0.1" placeholder="0.0">
+                <div class="peso">Peso: 4</div>
+            </div>
+
+        </div>
+
+        <button onclick="calcularMedia()">Calcular Média</button>
+
+        <button onclick="limparNotas()" class="limpar">Limpar Notas</button>
+
+        <div class="resultado" id="resultado">
+
+            <h3>Média do Semestre</h3>
+
+            <div class="media" id="mediaFinal">0.0</div>
+
+            <div class="status" id="status"></div>
+
+            <div class="faltando" id="faltando"></div>
+
+        </div>
+
+        <div class="info">
+            <strong>Cálculo da média:</strong><br>
+            • 1° nota × 3<br>
+            • 2° nota × 3<br>
+            • 3° nota × 4<br>
+            • Some os resultados e divida por 10<br>
+            • Média mínima para aprovação: 6.0
+        </div>
+
+    </div>
+
+    <footer>
+        © 2026 Leticia Lima
+    </footer>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</body>
+
+</html>
